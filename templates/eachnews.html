@@ -1,0 +1,29 @@
+{% load static %}
+
+{% static "images" as BaseUrl %}
+<!DOCTYPE html>
+<head>
+    <title>wef</title>
+    <link rel="stylesheet", type="text/css", media="screen" href="{% static 'bootstrap/css/main.css' %}">
+    <link rel ="stylesheet"href="{% static 'bootstrap/css/bootstrap.min.css' %}"/>
+</head>
+
+<body style="background-color:black;">
+<div style="position:relative;">
+    <div>
+        <h2 style="margin-right:500px ; color:rgb(190, 190, 42)">{{hertazelik.title}}</h2>
+        
+        <h4 style="margin-right: 500px; color:rgb(193, 195, 206)">&nbsp;&nbsp;&nbsp;&nbsp;{{hertazelik.desc}}</h4>
+
+    </div>
+    <div>
+        <img src="{{ hertazelik.image.url }}" style="border-radius: 3%; right: 5px; top: 5px; position: absolute;" id="image" width="400px" height="250px" >
+    </div>
+</div>
+
+<div>
+    <input type="button" class="btn btn-danger" value="Back" onclick="history.back()" style="background-color:black ;">
+    <a href="/" ><input type="button" class="btn btn-danger" value="Home" style="background-color:black ;"></a>
+
+</div>
+</body>

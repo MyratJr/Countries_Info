@@ -1,0 +1,7 @@
+.grid_view{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: white;
+}
